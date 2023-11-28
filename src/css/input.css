@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.select-btn {
+  @apply appearance-none w-113pxr bg-transparent border border-Gray-500 rounded-sm text-center text-Gray-500;
+}
+
+.language-icon {
+  @apply w-16pxr h-16pxr absolute;
+}
+
+.background-image {
+  @apply bg-[url('../assets/images/background-small.png')]
+  bg-cover
+  bg-no-repeat;
+}
+
+.sr-only {
+  @apply absolute w-1pxr h-1pxr p-0 m-[-1px] hidden whitespace-nowrap border-0;
+}
