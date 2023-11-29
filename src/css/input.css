@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .select-btn {
-  @apply appearance-none w-113pxr bg-transparent border border-Gray-500 rounded-sm text-center text-Gray-500;
+  @apply appearance-none bg-transparent border border-Gray-500 rounded-sm text-center text-Gray-500;
 }
 
 .language-icon {
@@ -11,7 +11,7 @@
 }
 
 .background-image {
-  @apply bg-[url('../assets/images/background-small.png')]
+  @apply bg-[url('../assets/images/background.png')]
   bg-cover
   bg-no-repeat;
 }

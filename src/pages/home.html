@@ -38,101 +38,118 @@
     <link href="../css/output.css" rel="stylesheet" type="text/css" />
   </head>
 
-  <body class="">
-    <header class="w-full h-20 flex items-center px-25pxr background-image">
-      <h1 class="">
-        <a class="block w-80pxr" href="/">
-          <picture>
-            <source
-              srcset="
-                ../assets/images/logo/logo.webp     870w,
-                ../assets/images/logo/logo@2x.webp 1740w
-              "
-              type="image/webp"
-            />
-            <img
-              src="../assets/images/logo/logo.png"
-              srcset="
-                ../assets/images/logo/logo.png     870w,
-                ../assets/images/logo/logo@2x.png 1740w
-              "
-              alt="NETFLIX"
-            />
-          </picture>
-        </a>
-      </h1>
-
-      <div class="select-languag ml-auto mr-16pxr relative">
-        <svg class="icon icon--global language-icon left-10pxr top-7pxr">
-          <use href="../assets/images/svg/sprites.svg#global" />
-        </svg>
-
-        <select
-          class="select-btn h-30pxr"
-          name="selectLanguage"
-          aria-label="언어 선택"
-        >
-          <option value="korean">한국어</option>
-          <option value="english">영어</option>
-        </select>
-
-        <svg class="language-icon right-10pxr top-7pxr">
-          <use href="../assets/images/svg/sprites.svg#triangle" />
-        </svg>
-      </div>
-
-      <a
-        class="rounded-[4px] w-60pxr h-30pxr bg-Red-500 text-White text-center leading-30pxr text-12pxr font-bold"
-        href="/"
-        >로그인</a
+  <body class="background-image">
+    <div class="bg-gradient-to-b from-black to-transparent">
+      <header
+        class="w-full h-20 tablet:h-140pxr flex items-center px-25pxr desktop: max-w-7xl mx-auto"
       >
-    </header>
-    <main class="main bg-Black text-white py-10">
+        <h1 class="">
+          <a class="block w-80pxr tablet:w-140pxr" href="/">
+            <picture>
+              <source
+                srcset="
+                  ../assets/images/logo/logo.webp     870w,
+                  ../assets/images/logo/logo@2x.webp 1740w
+                "
+                type="image/webp"
+              />
+              <img
+                src="../assets/images/logo/logo.png"
+                srcset="
+                  ../assets/images/logo/logo.png     870w,
+                  ../assets/images/logo/logo@2x.png 1740w
+                "
+                alt="NETFLIX"
+              />
+            </picture>
+          </a>
+        </h1>
+
+        <div class="select-languag ml-auto mr-16pxr relative">
+          <svg
+            class="icon icon--global language-icon left-10pxr top-7pxr tablet:top-12pxr"
+          >
+            <use href="../assets/images/svg/sprites.svg#global" />
+          </svg>
+
+          <select
+            class="select-btn h-30pxr w-100pxr text-right mobile:w-113pxr tablet:h-40pxr"
+            name="selectLanguage"
+            aria-label="언어 선택"
+          >
+            <option value="korean">한국어</option>
+            <option value="english">영어</option>
+          </select>
+
+          <svg class="language-icon right-10pxr top-7pxr tablet:top-12pxr">
+            <use href="../assets/images/svg/sprites.svg#triangle" />
+          </svg>
+        </div>
+
+        <a
+          class="rounded-[4px] w-60pxr h-30pxr bg-Red-500 text-White text-center leading-30pxr text-12pxr font-bold tablet:w-70pxr tablet:h-40pxr tablet:leading-40pxr tablet:text-16pxr"
+          href="/"
+          >로그인</a
+        >
+      </header>
+    </div>
+    <main
+      class="main bg-Black text-white py-10 tablet:bg-inherit tablet:py-57pxr tablet:bg-gradient-to-b from-transparent to-black"
+    >
       <section class="promotion text-center">
         <h2 class="sr-only">프로모션</h2>
-        <div class="promotion__area flex flex-col gap-6">
-          <p class="text-34pxr font-bold">
+        <div class="promotion__area flex flex-col gap-6 tablet:gap-7">
+          <p class="text-30pxr font-bold mobile:text-34pxr tablet:text-60pxr">
             <span class="block">영화, TV 프로그램을</span>
             <em class="block not-italic leading-10">무제한으로.</em>
           </p>
-          <p class="text-18pxr font-bold">
-            <em class="block not-italic">다양한 디바이스에서 시청하세요.</em>
-            <span class="block">언제든 해지하실 수 있습니다.</span>
+          <p class="text-18pxr font-bold tablet:text-20pxr">
+            <em class="block not-italic tablet:inline"
+              >다양한 디바이스에서 시청하세요.</em
+            >
+            <span class="block tablet:inline"
+              >언제든 해지하실 수 있습니다.</span
+            >
           </p>
-          <p class="text-14pxr">
+          <p class="text-14pxr tablet:text-16pxr">
             <span class="block"
               >시청할 준비가 되셨나요? 멤버십을 등록하거나</span
             >
             <span class="block">재시작하려면 이메일 주소를 입력하세요.</span>
           </p>
           <form class="membership-form" action="/">
-            <div class="flex flex-col gap-12pxr items-center">
-              <div class="form-input relative w-245pxr h-40pxr">
+            <div
+              class="flex flex-col gap-12pxr items-center justify-center tablet:flex-row tablet:gap-0"
+            >
+              <div class="form-input relative w-245pxr h-40pxr tablet:h-60pxr">
                 <input
-                  class="appearance-none w-full h-full rounded-[40px]"
+                  class="appearance-none w-full h-full rounded-[40px] tablet:rounded-none"
                   type="email"
                   id="membershipEmail"
                 />
                 <label
-                  class="absolute top-10pxr left-20pxr text-Gray-500 text-14pxr"
+                  class="absolute top-10pxr left-20pxr text-Gray-500 text-14pxr tablet:top-20pxr tablet:text-16pxr"
                   for="membershipEmail"
                   >이메일 주소</label
                 >
               </div>
               <button
-                class="w-160pxr h-40pxr bg-Red-500 rounded-[40px]"
+                class="w-160pxr h-40pxr bg-Red-500 rounded-[40px] tablet:rounded-none tablet:h-60pxr tablet:w-210pxr"
                 type="submit"
               >
-                <span class="text-14pxr font-bold inline-block"
+                <span
+                  class="text-14pxr font-bold inline-block tablet:text-22pxr"
                   >30일 무료 이용</span
                 >
-                <svg class="icon icon--arrow w-22pxr h-15pxr inline-block">
+                <svg
+                  class="icon icon--arrow w-22pxr h-15pxr inline-block tablet:mt-[-10px]"
+                >
                   <use href="../assets/images/svg/sprites.svg#arrow" />
                 </svg>
               </button>
             </div>
           </form>
-          <p class="text-12pxr">
+          <p class="text-12pxr tablet:text-16pxr tablet:font-bold">
             신규 회원만 이 프로모션을 이용하실 수 있습니다.
           </p>
         </div>
@@ -141,13 +158,13 @@
     <div class="bg-Black text-Gray-200 border-t border-Gray-800">
       <footer class="footer px-25pxr py-40pxr">
         <p class="text-20pxr font-bold leading-30pxr">
-          <span class="block">질문이 있으신가요?</span>
-          <span class="block"
+          <span class="block tablet:inline-block">질문이 있으신가요?</span>
+          <span class="block tablet:inline-block"
             >문의 전화: <a href="tel:080-001-9587">080-001-9587</a></span
           >
         </p>
         <ul
-          class="grid grid-cols-2 gap-y-10pxr mt-26pxr md:grid-cols-3 lg:grid-cols-4 max-w-7xl"
+          class="grid grid-cols-2 gap-y-10pxr mt-26pxr tablet:grid-cols-3 desktop:grid-cols-4 max-w-7xl desktop:text-16pxr"
         >
           <li class="footer__item"><a href="/">자주 묻는 질문</a></li>
           <li class="footer__item"><a href="/">고객 센터</a></li>
@@ -175,7 +192,7 @@
           </svg>
 
           <select
-            class="select-language__select select-btn h-43pxr left-10pxr"
+            class="select-language__select select-btn h-43pxr left-10pxr w-113pxr"
             name="selectLanguage"
             aria-label="언어 선택"
           >
@@ -191,7 +208,9 @@
           <small class="text-20pxr font-bold leading-8 text-Gray-300"
             >Netflix 대한민국</small
           >
-          <address class="flex flex-col not-italic text-Gray-400 mt-10pxr">
+          <address
+            class="flex flex-col not-italic text-Gray-400 mt-10pxr text-16pxr tablet:text-16pxr tablet:font-bold"
+          >
             <span
               >넷플릭스서비시스코리아 유한회사 통신판매업신고번호:
               제2018-서울종로-0426호</span
